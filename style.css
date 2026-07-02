@@ -1,0 +1,150 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    background-color:#0b0b0b;
+    color:#e0d3a5;
+    font-family:'Cinzel', serif;
+    line-height:1.6;
+
+    /* CENTER MAIN PAGE */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background-color:#111;
+    border-bottom:2px solid #d4af37;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#d4af37;
+}
+
+/* INTRO SECTION */
+.intro{
+    width:90%;
+    max-width:1000px;
+    margin:60px auto;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* TITLE */
+.intro h1{
+    font-size:3rem;
+    color:#d4af37;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+/* IMAGE */
+.intro img{
+    width:100%;
+    max-width:650px;
+    border-radius:14px;
+    border:2px solid #d4af37;
+    margin-bottom:25px;
+    box-shadow:0 0 25px rgba(212,175,55,0.2);
+}
+
+/* PARAGRAPH */
+.intro p{
+    max-width:800px;
+    margin-bottom:40px;
+    color:#cfcfcf;
+    font-size:1.1rem;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    width:100%;
+}
+
+.stat{
+    background:#141414;
+    border:2px solid #333;
+    padding:20px;
+    width:220px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.stat:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+    box-shadow:0 0 15px rgba(212,175,55,0.2);
+}
+
+.stat h2{
+    color:#d4af37;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+    .intro h1{
+        font-size:2rem;
+    }
+
+    .stats{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stat{
+        width:90%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
